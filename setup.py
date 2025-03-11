@@ -11,5 +11,10 @@ setuptools.setup(
     license="MIT",
     packages=setuptools.find_packages(),
     zip_safe=False,
-    entry_points={},
+    entry_points={
+         'console_scripts': [
+            'gui_piv=piv_processor.gui_piv:main',
+            'PIV_main_processing=piv_processor.PIV_main_processing:process_main_local',
+        ],
+    },
 )

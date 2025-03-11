@@ -23,7 +23,6 @@ def main_processor(base_filepath, model_path, Normalize_data=True, n_cpus=4, plo
         Normalize_data (bool): Normalize data flag.
         n_cpus (int): Number of CPUs to use.
         plot_video (bool): Flag to plot video.
-        Rawvideos_path (str): Path to raw videos.
         metadata_file (str): Path to metadata file.
     """
     # Get the subfolders in the base file path

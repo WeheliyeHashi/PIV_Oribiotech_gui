@@ -1,0 +1,3 @@
+[console_scripts]
+PIV_main_processing = piv_processor.PIV_main_processing:process_main_local
+gui_piv = piv_processor.gui_piv:main

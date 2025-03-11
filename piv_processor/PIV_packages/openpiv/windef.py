@@ -13,12 +13,12 @@ import scipy.ndimage as scn
 from scipy.interpolate import RectBivariateSpline
 import matplotlib.pyplot as plt
 
-from openpiv.tools import imread, Multiprocesser, display_vector_field, \
+from piv_processor.PIV_packages.openpiv.tools import imread, Multiprocesser, display_vector_field, \
     transform_coordinates
-from openpiv import validation, filters, tools, preprocess, scaling
-from openpiv.pyprocess import extended_search_area_piv, get_rect_coordinates, \
+from piv_processor.PIV_packages.openpiv import validation, filters, tools, preprocess, scaling
+from piv_processor.PIV_packages.openpiv.pyprocess import extended_search_area_piv, get_rect_coordinates, \
     get_field_shape
-from openpiv import smoothn
+from piv_processor.PIV_packages.openpiv import smoothn
 from skimage.util import invert
 
 
