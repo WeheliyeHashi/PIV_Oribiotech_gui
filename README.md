@@ -14,7 +14,11 @@ The PIV Processor GUI is a Python application designed to facilitate the process
 To run this project, you need to have the following Python packages installed:
 - pandas
 - matplotlib
-- Tkinter or PyQt (depending on the GUI library used)
+- sleap
+- numpy
+- tables
+- skimage
+- Tkinter 
 
 You can install the required packages using the following command:
 ```
@@ -29,6 +33,7 @@ pip install -e .
 3. Install the required dependencies.
 4. Run the GUI application by executing the following command:
    ```
+   conda activate PIV_code_ORI
    gui_piv
    ```
 5. Use the interface to select the necessary files and options, then start the processing.

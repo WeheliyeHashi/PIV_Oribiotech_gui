@@ -13,7 +13,7 @@ import argparse
 plt.rcParams["image.cmap"] = "gray"
 
 #%%
-def main_processor(base_filepath, model_path, Normalize_data=True, n_cpus=4, plot_video=True,  metadata_file=None):
+def main_processor(base_filepath, model_path, Normalize_data=True, n_cpus=4, plot_video=True,  metadata_file=None, progress_callback=None):
 
     """
     Main function to process PIV data.
@@ -41,7 +41,12 @@ def main_processor(base_filepath, model_path, Normalize_data=True, n_cpus=4, plo
     total_files = len(metadata)
     for index, row in metadata.iterrows():
         subfolder = row.iloc[-1]
-        print(f"Processing file {index + 1} of {total_files}: {subfolder}")   
+        #print(f"Processing file {index + 1} of {total_files}: {subfolder}")
+        message = f"Processing file {index + 1} of {total_files}"
+        if progress_callback:
+            progress_callback(message)
+        else:
+            print(message)  
         paths = {
             "RawVideos": subfolder, 
             "Masked": subfolder.replace("RawVideos", "MaskedImages"),
@@ -86,7 +91,7 @@ def process_main_local():
 
     args = parser.parse_args()
 
-    main_processor(args.base_filepath, args.model_path, args.normalize_data, args.n_cpus, args.plot_video,  args.metadata_file)
+    main_processor(args.base_filepath, args.model_path, args.normalize_data, args.n_cpus, args.plot_video,  args.metadata_file, progress_callback=None)
 
 if __name__ == "__main__":
     process_main_local()
