@@ -38,6 +38,13 @@ pip install -e .
    ```
 5. Use the interface to select the necessary files and options, then start the processing.
 
+
+## Model
+
+The model for detecting the walls can be found in sharepoint: Bioprocessing/Documents/OBP-EMC- Engineering Mixing Characterisation/PIV/EMC-0061
+
+
+
 ## Contributing
 Contributions to improve the functionality and usability of the PIV Processor GUI are welcome. Please feel free to submit issues or pull requests.
 
