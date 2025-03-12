@@ -38,6 +38,7 @@ pip install -e .
    gui_piv
    ```
 5. Use the interface to select the necessary files and options, then start the processing.
+![GUI_PIV_2](https://github.com/user-attachments/assets/3d1042a4-f198-4268-a0ce-43c60b13557f)
 
 
 ## Model
