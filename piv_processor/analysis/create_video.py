@@ -3,7 +3,6 @@
 import matplotlib
 matplotlib.use('Agg')  # Use the Agg backend for non-interactive plotting
 
-from openpiv import windef  # <---- see windef.py for details
 # from openpiv.settings import PIVSettings
 from matplotlib.patches import Polygon
 import numpy as np

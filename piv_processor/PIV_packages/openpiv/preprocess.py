@@ -3,7 +3,7 @@ from skimage import img_as_float, exposure, img_as_ubyte
 from skimage.filters import sobel, threshold_otsu
 from skimage.measure import find_contours, approximate_polygon, points_in_poly
 from skimage.transform import rescale
-from openpiv.tools import imread
+from piv_processor.PIV_packages.openpiv.tools import imread
 import numpy as np
 import matplotlib.pyplot as plt
 """This module contains image processing routines that improve

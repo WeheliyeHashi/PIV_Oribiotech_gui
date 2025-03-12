@@ -1,4 +1,4 @@
-from openpiv.lib import replace_nans
+from piv_processor.PIV_packages.openpiv.lib import replace_nans
 import numpy as np
 from scipy.signal import convolve
 
