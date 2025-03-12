@@ -1,4 +1,5 @@
 # PIV Processor GUI
+![GUI_PIV](https://github.com/user-attachments/assets/312b0dc0-a808-4506-a4ff-dcdef9bd73d7)
 
 ## Overview
 The PIV Processor GUI is a Python application designed to facilitate the processing of Particle Image Velocimetry (PIV) data. This application provides a user-friendly graphical interface that allows users to easily configure parameters for processing PIV data, including selecting directories for raw videos and model files, specifying the number of CPUs to use, and choosing options for data normalization and video plotting.
