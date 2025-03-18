@@ -71,7 +71,7 @@ def main_processor(base_filepath, model_path, Normalize_data=True, n_cpus=4, plo
             s11 = s11 *(sl / v_max)
             s22 = s22 *(sl / v_max)
             s33 = s33 *(sl / v_max)
-        pp.save_to_hdf5(x_grid, y_grid, u_grid, v_grid, v_mag, s11, s22, s33, w_vor,wall_edges, baffle_edges, paths)
+        pp.save_to_hdf5(x_grid, y_grid, u_grid, v_grid, v_mag, s11, s22, s33, w_vor,wall_edges, baffle_edges, Normalize_data, paths)
         #  Plot a video 
         if plot_video:
             results_file = Path(paths["Results"]).rglob("*.txt")

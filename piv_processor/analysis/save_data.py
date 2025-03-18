@@ -1,6 +1,6 @@
 import tables
 import os
-
+import numpy as np
 
 def save_to_hdf5(
     x_grid,
@@ -14,6 +14,7 @@ def save_to_hdf5(
     w_vor,
     wall_edges,
     baffle_edges,
+    Normalized,
     paths,
 ):
     hdf5_path = os.path.join(paths["Results"], "metadata_features.hdf5")
@@ -37,5 +38,8 @@ def save_to_hdf5(
         f.create_carray(f.root, "s22", obj=s22, filters=TABLE_FILTERS)
         f.create_carray(f.root, "s33", obj=s33, filters=TABLE_FILTERS)
         f.create_carray(f.root, "w_vor", obj=w_vor, filters=TABLE_FILTERS)
+        
+        # Save boolean value
+        f.create_array(f.root, "Normalised_data", obj=np.string_(str(Normalized)))
 
         print("Finish: saving the data")
