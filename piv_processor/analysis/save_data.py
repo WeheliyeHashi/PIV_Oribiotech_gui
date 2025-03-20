@@ -36,7 +36,7 @@ def save_to_hdf5(
         f.create_carray(f.root, "v_mag", obj=v_mag, filters=TABLE_FILTERS)
         f.create_carray(f.root, "s11", obj=s11, filters=TABLE_FILTERS)
         f.create_carray(f.root, "s22", obj=s22, filters=TABLE_FILTERS)
-        f.create_carray(f.root, "s33", obj=s33, filters=TABLE_FILTERS)
+        f.create_carray(f.root, "tau_max", obj=s33, filters=TABLE_FILTERS)
         f.create_carray(f.root, "w_vor", obj=w_vor, filters=TABLE_FILTERS)
         
         # Save boolean value
