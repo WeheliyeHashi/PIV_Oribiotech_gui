@@ -23,7 +23,7 @@ To run this project, you need to have the following Python packages installed:
 
 You can install the required packages using the following command:
 ```
-conda env create -f requirements.yml
+conda env create -f requirements.yaml
 conda activate PIV_code_ORI
 pip install -e .
 ```
